@@ -3,7 +3,7 @@
 
 #  코드 분석 작업 파트
 ### 김민철
-* [x] GameHandler.cs
+* [x] GameHandler.cpp
 ### 강한솔
 * [x] Bullet_Normal.cpp
 * [x] BulletBase.cpp
@@ -34,7 +34,7 @@
 * [x] PaternRandom.cpp
 ### 최우진
 * [x] Ref_Shooting_Game.cpp
-* [x] Stage.cs
+* [x] Stage.cpp
 
 # 주석 작성 방법
 [내용 보기](https://luckygg.tistory.com/346)
