@@ -37,4 +37,4 @@
 * [x] Stage.cs
 
 # 주석 작성 방법
-[내용 ](https://luckygg.tistory.com/346)
+[내용 보기](https://luckygg.tistory.com/346)
