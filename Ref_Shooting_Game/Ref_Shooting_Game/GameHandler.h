@@ -1,10 +1,13 @@
+//중복 컴파일 방지를 위한 pragma once
 #pragma once
+//필요한 헤더 파일 전처리 부분
 #include "framework.h"
 #include <vector>
 #include <map>
-
-
+//전처리 종료 시점
+//std 네임 스페이스 사용 선언
 using namespace std;
+
 class Entity;
 class BulletBase;
 class GameHandler

@@ -1,6 +1,7 @@
+//필요한 헤더 파일 전처리 부분
 #include "GameHandler.h"
 #include "PlayerBase.h"
-#include "enemyBase.h"
+#include "EnemyBase.h"
 #include "Bullet_Normal.h"
 #include "PageStart.h"
 #include "PageEnd.h"
@@ -9,6 +10,8 @@
 #include "Resource.h"
 #include "Type0.h"
 #include <iostream>
+//전처리 종료 시점
+
 
 GameHandler* GameHandler::Instance = nullptr;
 
