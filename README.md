@@ -25,7 +25,6 @@
 * [x] Enemy_bird2.cpp
 * [x] Enemy_MiddleBoss.cpp
 ### 김희진
-* [x] EnemyBase.cpp
 * [x] PatternBase.cpp
 * [x] PatternFlower.cpp
 * [x] PatternHurricane.cpp
@@ -35,6 +34,7 @@
 ### 최우진
 * [x] Ref_Shooting_Game.cpp
 * [x] Stage.cpp
+* [x] EnemyBase.cpp
 
 # 주석 작성 방법
 [내용 보기](https://luckygg.tistory.com/346)
