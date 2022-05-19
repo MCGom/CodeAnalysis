@@ -1,15 +1,22 @@
-//중복 컴파일 방지를 위한 pragma once
+///중복 컴파일 방지를 위한 부분
 #pragma once
-//필요한 헤더 파일 전처리 부분
+///필요한 헤더 파일 전처리 부분
 #include "framework.h"
 #include <vector>
 #include <map>
-//전처리 종료 시점
-//std 네임 스페이스 사용 선언
+///전처리 종료 시점
+///std 네임 스페이스 사용 선언
 using namespace std;
-
+/**
+ * \brief 
+ */
 class Entity;
 class BulletBase;
+
+/**
+ * @class GameHandler
+ * @brief 
+ */
 class GameHandler
 {
 public:
@@ -21,7 +28,7 @@ public:
 	void InitBitmap(HINSTANCE hInst);
 
 	//
-	static DWORD WINAPI test(LPVOID param);
+	static DWORD WINAPI test(void* param);
 	static DWORD WINAPI attack(LPVOID param);
 	static DWORD WINAPI enemy_attack(LPVOID param);
 	static DWORD WINAPI enemy_move(LPVOID param);
