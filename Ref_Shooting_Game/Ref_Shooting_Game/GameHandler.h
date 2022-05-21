@@ -1,12 +1,19 @@
+
 #pragma once
+
 #include "framework.h"
 #include <vector>
 #include <map>
 
-
 using namespace std;
+
 class Entity;
 class BulletBase;
+
+/**
+ * @class GameHandler
+ * @brief GameHandler.cpp에서 사용할 여러 맴버의 정의
+ */
 class GameHandler
 {
 public:
@@ -17,21 +24,21 @@ public:
 	static void DestroyInstance();
 	void InitBitmap(HINSTANCE hInst);
 
-	//
+
 	static DWORD WINAPI test(LPVOID param);
 	static DWORD WINAPI attack(LPVOID param);
 	static DWORD WINAPI enemy_attack(LPVOID param);
 	static DWORD WINAPI enemy_move(LPVOID param);
 	static DWORD WINAPI BulletTR(LPVOID param);
 	static DWORD WINAPI StageTR(LPVOID param);
-
+	
 	void GameStart();
 	void GameOver();
 	void GameClear();
 	void ResetGame();
 	void RestartGame();
 	bool EnemyCollisionTest(class EnemyBase* ColEnemy);
-
+	
 	int BulletCollisionTestToEnemy(BulletBase* ColBullet);
 	bool BulletCollisionTestToPlayer(BulletBase* ColBullet);
 
