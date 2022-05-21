@@ -1,21 +1,18 @@
-///중복 컴파일 방지를 위한 부분
+
 #pragma once
-///필요한 헤더 파일 전처리 부분
+
 #include "framework.h"
 #include <vector>
 #include <map>
-///전처리 종료 시점
-///std 네임 스페이스 사용 선언
+
 using namespace std;
-/**
- * \brief 
- */
+
 class Entity;
 class BulletBase;
 
 /**
  * @class GameHandler
- * @brief 
+ * @brief GameHandler.cpp에서 사용할 여러 맴버의 정의
  */
 class GameHandler
 {
@@ -27,21 +24,21 @@ public:
 	static void DestroyInstance();
 	void InitBitmap(HINSTANCE hInst);
 
-	//
-	static DWORD WINAPI test(void* param);
+
+	static DWORD WINAPI test(LPVOID param);
 	static DWORD WINAPI attack(LPVOID param);
 	static DWORD WINAPI enemy_attack(LPVOID param);
 	static DWORD WINAPI enemy_move(LPVOID param);
 	static DWORD WINAPI BulletTR(LPVOID param);
 	static DWORD WINAPI StageTR(LPVOID param);
-
+	
 	void GameStart();
 	void GameOver();
 	void GameClear();
 	void ResetGame();
 	void RestartGame();
 	bool EnemyCollisionTest(class EnemyBase* ColEnemy);
-
+	
 	int BulletCollisionTestToEnemy(BulletBase* ColBullet);
 	bool BulletCollisionTestToPlayer(BulletBase* ColBullet);
 
